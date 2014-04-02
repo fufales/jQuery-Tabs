@@ -21,35 +21,35 @@ Lo único necesario es la utlima version de jQuery, pegarlo en el HTML de su web
 
 Codigos
 =======
-    Los eventos usados son los siguientes adjuntos en esta lista:
-    <br/><br/>
-    <a target="_blank" href="http://api.jquery.com/click/">
-        .click()
-    </a>
-    <br>
-    <a target="_blank" href="http://api.jquery.com/fadeToggle/">
-        .fadeToggle()
-    </a>
-    <br>
-    <a target="_blank" href="http://api.jquery.com/addClass/">
-        .addClass()
-    </a>
-    <br>
-    <a target="_blank" href="http://api.jquery.com/removeClass/">
-        .removeClass()
-    </a>
-    <br>
-    <a target="_blank" href="http://api.jquery.com/hide/">
-        .hide()
-    </a>
+Los eventos usados son los siguientes adjuntos en esta lista:
+
+<a target="_blank" href="http://api.jquery.com/click/">
+    .click()
+</a>
+
+<a target="_blank" href="http://api.jquery.com/fadeToggle/">
+    .fadeToggle()
+</a>
+
+<a target="_blank" href="http://api.jquery.com/addClass/">
+    .addClass()
+</a>
+
+<a target="_blank" href="http://api.jquery.com/removeClass/">
+    .removeClass()
+</a>
+
+<a target="_blank" href="http://api.jquery.com/hide/">
+    .hide()
+</a>
     
     
 Creditos
 ========
 
-Programador | Christopher Quiros 
-Compañia | Klooid.com 
-Desde | Costa Rica 
+    Programador | Christopher Quiros 
+    Compañia | Klooid.com 
+    Desde | Costa Rica 
 
 Usando 
 HTML5 
