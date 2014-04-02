@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Tabs</title>
+	<style type="text/css">
+		span {
+		    font-family: arial;
+		    font-size: 14px;
+		    display: inline-block;
+		    vertical-align: top;
+		    padding: 5px 11px;
+		    cursor: pointer;
+		    text-transform: uppercase;
+		    
+		    background: #f6f8f9;
+		    background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+		    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9));
+		    background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+		    background: -o-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+		    background: -ms-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+		    background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 );
+		    border-radius: 4px;
+		}
+		span:hover {
+		    background: rgb(157,213,58);
+		    background: -moz-linear-gradient(top,  rgba(157,213,58,1) 0%, rgba(161,213,79,1) 50%, rgba(128,194,23,1) 51%, rgba(124,188,10,1) 100%);
+		    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(157,213,58,1)), color-stop(50%,rgba(161,213,79,1)), color-stop(51%,rgba(128,194,23,1)), color-stop(100%,rgba(124,188,10,1)));
+		    background: -webkit-linear-gradient(top,  rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+		    background: -o-linear-gradient(top,  rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+		    background: -ms-linear-gradient(top,  rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+		    background: linear-gradient(to bottom,  rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 );
+		}
+		p {
+		    width: 625px;
+		    background-color: #f1f1f1;
+		    color: #333;
+		    font-family: arial;
+		    text-align: left;
+		    padding: 10px 12px;
+		}
+		.contenitdo_1,
+		.contenitdo_2, 
+		.contenitdo_3, 
+		.contenitdo_4, 
+		.contenitdo_5 {
+		    display: none;
+		}
+		.boton_1_add {
+		    background: rgb(157,213,58);
+		    background: -moz-linear-gradient(top,  rgba(157,213,58,1) 0%, rgba(161,213,79,1) 50%, rgba(128,194,23,1) 51%, rgba(124,188,10,1) 100%);
+		    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(157,213,58,1)), color-stop(50%,rgba(161,213,79,1)), color-stop(51%,rgba(128,194,23,1)), color-stop(100%,rgba(124,188,10,1)));
+		    background: -webkit-linear-gradient(top,  rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+		    background: -o-linear-gradient(top,  rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+		    background: -ms-linear-gradient(top,  rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+		    background: linear-gradient(to bottom,  rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+		    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 );
+		}
+		.images_css {
+		    display: block;
+		    margin: 0 auto;
+		}
+		p a {
+		    text-decoration: none;
+		    color: #4072b4;
+		    display: block;
+		    margin: 5px 0px;
+		}
+		p a:hover {
+		    text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+
+<span class="boton_1">Que es esto?</span>
+<span class="boton_2">Para que?</span>
+<span class="boton_3">Que requiere?</span>
+<span class="boton_4">Se usó</span>
+<span class="boton_5">Creditos</span>
+
+<p class="contenitdo_1">
+    <strong>
+        Que es esto?
+    </strong>
+    <br/>
+    Este es un mini plug-in jQuery, usando JQ y HTML5.
+    <br/><br/>
+    <img src="http://www.w3.org/html/logo/downloads/HTML5_Badge_256.png" alt="img" class="images_css"/>
+</p>
+<p class="contenitdo_2">
+    <strong>
+        Para que?
+    </strong>
+    <br/>
+    Es para mostrar como hacer Tabs con un simple codigo jQuery y HTML5, usando el evento " .click " , ".addClass" y ".removeClass".
+    <br/><br/>
+    <img src="http://png-2.findicons.com/files/icons/2420/coded/256/package_code.png" alt="img" class="images_css"/>
+</p>
+<p class="contenitdo_3">
+    <strong>
+        Que requiere?
+    </strong>
+    <br/>
+    Lo único necesario es la utlima version de jQuery, pegarlo en el HTML de su web, y listo, estará funcionando y listo para configurar.
+    <br/><br/>
+    <img src="http://www.ia2web.com/informatica/wp-content/uploads/2013/10/jquery-logo.png" alt="img" class="images_css"/>
+</p>
+<p class="contenitdo_4">
+    <strong>
+        Codigos
+    </strong>
+    <br/>
+    Los eventos usados son los siguientes adjuntos en esta lista:
+    <br/><br/>
+    <a target="_blank" href="http://api.jquery.com/click/">
+        .click()
+    </a>
+    <a target="_blank" href="http://api.jquery.com/fadeToggle/">
+        .fadeToggle()
+    </a>
+    <a target="_blank" href="http://api.jquery.com/addClass/">
+        .addClass()
+    </a>
+    <a target="_blank" href="http://api.jquery.com/removeClass/">
+        .removeClass()
+    </a>
+    <a target="_blank" href="http://api.jquery.com/hide/">
+        .hide()
+    </a>
+</p>
+<p class="contenitdo_5">
+    <strong>
+        Creditos
+    </strong>
+    <br/><br/>
+    Programador | Christopher Quiros
+    <br/>
+    Compañia | Klooid.com
+    <br/>
+    Desde | Costa Rica
+    <br/><br/>
+    <strong>
+        Usando
+    </strong>
+    <br/>
+    HTML5
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <a target="_blank" href="http://www.klooid.com">
+        Klooid.com © | 2014, se puede compartir el contenido.
+    </a>
+</p>
+
+<script src="jquery.min.js"></script>
+<script type="text/javascript">
+	$(".boton_1").click(function(){
+    $(".contenitdo_1").fadeToggle( 200 );
+    $( ".boton_1" ).addClass( "boton_1_add" );
+});
+$(".boton_2, .boton_3, .boton_4, .boton_5").click(function(){
+    $(".contenitdo_1").hide();
+    $( ".boton_1" ).removeClass( "boton_1_add" );
+});
+
+$(".boton_2").click(function(){
+    $(".contenitdo_2").fadeToggle( 200 );
+    $( ".boton_2" ).addClass( "boton_1_add" );
+});
+$(".boton_1, .boton_3, .boton_4, .boton_5").click(function(){
+    $(".contenitdo_2").hide();
+    $( ".boton_2" ).removeClass( "boton_1_add" );
+});
+
+$(".boton_3").click(function(){
+    $(".contenitdo_3").fadeToggle( 200 );
+    $( ".boton_3" ).addClass( "boton_1_add" );
+});
+$(".boton_1, .boton_2, .boton_4, .boton_5").click(function(){
+    $(".contenitdo_3").hide();
+    $( ".boton_3" ).removeClass( "boton_1_add" );
+});
+
+$(".boton_4").click(function(){
+    $(".contenitdo_4").fadeToggle( 200 );
+    $( ".boton_4" ).addClass( "boton_1_add" );
+});
+$(".boton_1, .boton_2, .boton_3, .boton_5").click(function(){
+    $(".contenitdo_4").hide();
+    $( ".boton_4" ).removeClass( "boton_1_add" );
+});
+
+$(".boton_5").click(function(){
+    $(".contenitdo_5").fadeToggle( 200 );
+    $( ".boton_5" ).addClass( "boton_1_add" );
+});
+$(".boton_1, .boton_2, .boton_3, .boton_4").click(function(){
+    $(".contenitdo_5").hide();
+    $( ".boton_5" ).removeClass( "boton_1_add" );
+});
+</script>
+</body>
+</html>
